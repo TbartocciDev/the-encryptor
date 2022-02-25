@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B419169827961A20004F8AD0 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419169727961A20004F8AD0 /* MessageViewController.swift */; };
+		B445D587272DE99500BBA0CF /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445D586272DE99500BBA0CF /* UIButton.swift */; };
+		B445D58A272E17D000BBA0CF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445D589272E17D000BBA0CF /* AboutViewController.swift */; };
+		B445D58E272F2BF000BBA0CF /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445D58D272F2BF000BBA0CF /* HowToViewController.swift */; };
+		B445D590272F3D6700BBA0CF /* PagingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445D58F272F3D6700BBA0CF /* PagingCollectionViewController.swift */; };
+		B447D3762707CEB900B5BCA6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B447D3752707CEB900B5BCA6 /* CustomTextField.swift */; };
+		B45875DF2709227700CBD902 /* TextCopiedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45875DE2709227700CBD902 /* TextCopiedView.swift */; };
+		B45875E8270A20C500CBD902 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45875E7270A20C500CBD902 /* MenuTableViewCell.swift */; };
+		B45875EA270A2DB100CBD902 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45875E9270A2DB100CBD902 /* MenuViewController.swift */; };
+		B45875EC270A362400CBD902 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45875EB270A362400CBD902 /* SlideInTransition.swift */; };
+		B45875F4270BB86000CBD902 /* EncryptDecryptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45875F3270BB86000CBD902 /* EncryptDecryptViewController.swift */; };
 		B47EA6832707926F00718467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6822707926F00718467 /* AppDelegate.swift */; };
 		B47EA6852707926F00718467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6842707926F00718467 /* SceneDelegate.swift */; };
 		B47EA6872707926F00718467 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6862707926F00718467 /* ViewController.swift */; };
@@ -16,6 +27,9 @@
 		B47EA6922707927500718467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47EA6902707927500718467 /* LaunchScreen.storyboard */; };
 		B47EA69D2707927500718467 /* EncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA69C2707927500718467 /* EncryptionTests.swift */; };
 		B47EA6A82707927500718467 /* EncryptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6A72707927500718467 /* EncryptionUITests.swift */; };
+		B47EA6B6270793C100718467 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6B5270793C100718467 /* CustomSegmentedControl.swift */; };
+		B4A9750227BF0AB2001CC979 /* Encryptor-Video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4A9750127BF0AB2001CC979 /* Encryptor-Video3.mp4 */; };
+		B4A9750427C1BA83001CC979 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9750327C1BA83001CC979 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B419169727961A20004F8AD0 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		B445D586272DE99500BBA0CF /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		B445D589272E17D000BBA0CF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		B445D58D272F2BF000BBA0CF /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
+		B445D58F272F3D6700BBA0CF /* PagingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewController.swift; sourceTree = "<group>"; };
+		B447D3752707CEB900B5BCA6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B45875DE2709227700CBD902 /* TextCopiedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCopiedView.swift; sourceTree = "<group>"; };
+		B45875E7270A20C500CBD902 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		B45875E9270A2DB100CBD902 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B45875EB270A362400CBD902 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		B45875F3270BB86000CBD902 /* EncryptDecryptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptDecryptViewController.swift; sourceTree = "<group>"; };
 		B47EA67F2707926F00718467 /* Encryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47EA6822707926F00718467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47EA6842707926F00718467 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +76,9 @@
 		B47EA6A32707927500718467 /* EncryptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47EA6A72707927500718467 /* EncryptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionUITests.swift; sourceTree = "<group>"; };
 		B47EA6A92707927500718467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B47EA6B5270793C100718467 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		B4A9750127BF0AB2001CC979 /* Encryptor-Video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Encryptor-Video3.mp4"; sourceTree = "<group>"; };
+		B4A9750327C1BA83001CC979 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +106,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4191696279619FF004F8AD0 /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				B419169727961A20004F8AD0 /* MessageViewController.swift */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		B445D585272DE97B00BBA0CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B445D586272DE99500BBA0CF /* UIButton.swift */,
+				B4A9750327C1BA83001CC979 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B445D588272E17B400BBA0CF /* AboutView */ = {
+			isa = PBXGroup;
+			children = (
+				B445D589272E17D000BBA0CF /* AboutViewController.swift */,
+			);
+			path = AboutView;
+			sourceTree = "<group>";
+		};
+		B445D58B272F2B9D00BBA0CF /* HowToView */ = {
+			isa = PBXGroup;
+			children = (
+				B445D58D272F2BF000BBA0CF /* HowToViewController.swift */,
+			);
+			path = HowToView;
+			sourceTree = "<group>";
+		};
+		B445D58C272F2BA800BBA0CF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B45875E0270A02C700CBD902 /* HomeView */,
+				B45875E1270A02DB00CBD902 /* MenuView */,
+				B45875F2270BB70B00CBD902 /* EncryptDecryptView */,
+				B445D58B272F2B9D00BBA0CF /* HowToView */,
+				B445D588272E17B400BBA0CF /* AboutView */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B447D3742707CE9000B5BCA6 /* CustomModels */ = {
+			isa = PBXGroup;
+			children = (
+				B45875ED270A698E00CBD902 /* Transitions */,
+				B45875E7270A20C500CBD902 /* MenuTableViewCell.swift */,
+				B47EA6B5270793C100718467 /* CustomSegmentedControl.swift */,
+				B447D3752707CEB900B5BCA6 /* CustomTextField.swift */,
+				B45875DE2709227700CBD902 /* TextCopiedView.swift */,
+				B445D58F272F3D6700BBA0CF /* PagingCollectionViewController.swift */,
+			);
+			path = CustomModels;
+			sourceTree = "<group>";
+		};
+		B45875E0270A02C700CBD902 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				B47EA6862707926F00718467 /* ViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		B45875E1270A02DB00CBD902 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				B45875E9270A2DB100CBD902 /* MenuViewController.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		B45875ED270A698E00CBD902 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				B45875EB270A362400CBD902 /* SlideInTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		B45875F2270BB70B00CBD902 /* EncryptDecryptView */ = {
+			isa = PBXGroup;
+			children = (
+				B45875F3270BB86000CBD902 /* EncryptDecryptViewController.swift */,
+				B4191696279619FF004F8AD0 /* MessageView */,
+			);
+			path = EncryptDecryptView;
+			sourceTree = "<group>";
+		};
 		B47EA6762707926F00718467 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +220,13 @@
 		B47EA6812707926F00718467 /* Encryption */ = {
 			isa = PBXGroup;
 			children = (
+				B4A9750127BF0AB2001CC979 /* Encryptor-Video3.mp4 */,
+				B445D58C272F2BA800BBA0CF /* ViewControllers */,
+				B445D585272DE97B00BBA0CF /* Extensions */,
+				B447D3742707CE9000B5BCA6 /* CustomModels */,
+				B47EA6882707926F00718467 /* Main.storyboard */,
 				B47EA6822707926F00718467 /* AppDelegate.swift */,
 				B47EA6842707926F00718467 /* SceneDelegate.swift */,
-				B47EA6862707926F00718467 /* ViewController.swift */,
-				B47EA6882707926F00718467 /* Main.storyboard */,
 				B47EA68E2707927500718467 /* Assets.xcassets */,
 				B47EA6902707927500718467 /* LaunchScreen.storyboard */,
 				B47EA6932707927500718467 /* Info.plist */,
@@ -234,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A9750227BF0AB2001CC979 /* Encryptor-Video3.mp4 in Resources */,
 				B47EA6922707927500718467 /* LaunchScreen.storyboard in Resources */,
 				B47EA68F2707927500718467 /* Assets.xcassets in Resources */,
 				B47EA68A2707926F00718467 /* Main.storyboard in Resources */,
@@ -261,10 +384,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B445D590272F3D6700BBA0CF /* PagingCollectionViewController.swift in Sources */,
+				B445D58A272E17D000BBA0CF /* AboutViewController.swift in Sources */,
 				B47EA6872707926F00718467 /* ViewController.swift in Sources */,
+				B445D587272DE99500BBA0CF /* UIButton.swift in Sources */,
+				B45875DF2709227700CBD902 /* TextCopiedView.swift in Sources */,
 				B47EA6832707926F00718467 /* AppDelegate.swift in Sources */,
+				B447D3762707CEB900B5BCA6 /* CustomTextField.swift in Sources */,
+				B45875F4270BB86000CBD902 /* EncryptDecryptViewController.swift in Sources */,
+				B45875EA270A2DB100CBD902 /* MenuViewController.swift in Sources */,
+				B445D58E272F2BF000BBA0CF /* HowToViewController.swift in Sources */,
+				B45875E8270A20C500CBD902 /* MenuTableViewCell.swift in Sources */,
 				B47EA68D2707926F00718467 /* Encryption.xcdatamodeld in Sources */,
+				B419169827961A20004F8AD0 /* MessageViewController.swift in Sources */,
+				B47EA6B6270793C100718467 /* CustomSegmentedControl.swift in Sources */,
+				B4A9750427C1BA83001CC979 /* String.swift in Sources */,
 				B47EA6852707926F00718467 /* SceneDelegate.swift in Sources */,
+				B45875EC270A362400CBD902 /* SlideInTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,15 +577,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.2;
+				DEVELOPMENT_TEAM = 3SAK2H9499;
 				INFOPLIST_FILE = Encryption/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tommybartocci.Encryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,15 +598,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.2;
+				DEVELOPMENT_TEAM = 3SAK2H9499;
 				INFOPLIST_FILE = Encryption/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tommybartocci.Encryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
