@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Encryptor View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="EncryptorViewController" customModule="Encryption" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write a message below!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYl-7B-Ngb">
+                                <rect key="frame" x="28" y="87" width="287.66666666666669" height="41"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="abO-Ah-PXP">
+                                <rect key="frame" x="28" y="144" width="337" height="255.66666666666663"/>
+                                <color key="backgroundColor" name="EncryptorGrey"/>
+                                <color key="textColor" name="EncryptorText"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-wp-ikg">
+                                <rect key="frame" x="28" y="748" width="337" height="51"/>
+                                <color key="backgroundColor" name="EncryptorGrey"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iR0-la-vuZ"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Encrypt"/>
+                                    <segment title="Decrypt"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="EncryptorText"/>
+                                <connections>
+                                    <action selector="controllerValueChanged:" destination="Y6W-OH-hqX" eventType="valueChanged" id="GIN-5a-Qks"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXZ-Bm-81E">
+                                <rect key="frame" x="28" y="419.66666666666669" width="337" height="30"/>
+                                <color key="backgroundColor" name="EncryptorGrey"/>
+                                <color key="tintColor" name="EncryptorText"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Process Request"/>
+                                <connections>
+                                    <action selector="processBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5Qr-gn-uSh"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cC7-co-YkL">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwg-kP-KXW">
+                                        <rect key="frame" x="59" y="275.33333333333331" width="275" height="208.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyd-Ur-snD">
+                                                <rect key="frame" x="28" y="141.33333333333337" width="219" height="47"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="25"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="N8I-01-LrW">
+                                                <rect key="frame" x="28" y="121.33333333333337" width="219" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="22"/>
+                                                <color key="textColor" name="EncryptorText"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="So9-Pp-qtS">
+                                                <rect key="frame" x="95" y="20" width="85" height="85.333333333333329"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="So9-Pp-qtS" secondAttribute="height" multiplier="1:1" id="aDs-cf-zBV"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="EncryptorBG"/>
+                                        <constraints>
+                                            <constraint firstItem="N8I-01-LrW" firstAttribute="top" secondItem="So9-Pp-qtS" secondAttribute="bottom" constant="16" id="8gs-YI-TKs"/>
+                                            <constraint firstItem="fyd-Ur-snD" firstAttribute="top" secondItem="N8I-01-LrW" secondAttribute="bottom" constant="20" id="ARE-nZ-jA3"/>
+                                            <constraint firstAttribute="trailing" secondItem="fyd-Ur-snD" secondAttribute="trailing" constant="28" id="HOJ-zR-iox"/>
+                                            <constraint firstAttribute="bottom" secondItem="fyd-Ur-snD" secondAttribute="bottom" constant="20" id="M6T-FA-vJD"/>
+                                            <constraint firstItem="N8I-01-LrW" firstAttribute="centerX" secondItem="Nwg-kP-KXW" secondAttribute="centerX" id="f8X-Ut-t9M"/>
+                                            <constraint firstItem="N8I-01-LrW" firstAttribute="width" secondItem="fyd-Ur-snD" secondAttribute="width" id="frB-dm-X1p"/>
+                                            <constraint firstItem="So9-Pp-qtS" firstAttribute="top" secondItem="Nwg-kP-KXW" secondAttribute="top" constant="20" id="mmA-kf-V19"/>
+                                            <constraint firstItem="So9-Pp-qtS" firstAttribute="centerX" secondItem="Nwg-kP-KXW" secondAttribute="centerX" id="xLW-mt-jLK"/>
+                                            <constraint firstItem="fyd-Ur-snD" firstAttribute="leading" secondItem="Nwg-kP-KXW" secondAttribute="leading" constant="28" id="zP7-Zr-bTB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.65133343627121276" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nwg-kP-KXW" firstAttribute="width" secondItem="cC7-co-YkL" secondAttribute="width" multiplier="0.7" id="Bf6-JR-kfy"/>
+                                    <constraint firstItem="Nwg-kP-KXW" firstAttribute="height" relation="lessThanOrEqual" secondItem="cC7-co-YkL" secondAttribute="height" multiplier="0.5" id="DWf-XS-Abk"/>
+                                    <constraint firstItem="Nwg-kP-KXW" firstAttribute="centerX" secondItem="cC7-co-YkL" secondAttribute="centerX" id="PRF-wB-1YO"/>
+                                    <constraint firstItem="Nwg-kP-KXW" firstAttribute="centerY" secondItem="cC7-co-YkL" secondAttribute="centerY" id="RXV-AX-7CT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="EncryptorBG"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cC7-co-YkL" secondAttribute="trailing" id="40A-SC-rA5"/>
+                            <constraint firstItem="UXZ-Bm-81E" firstAttribute="top" secondItem="abO-Ah-PXP" secondAttribute="bottom" constant="20" id="EVU-yi-GGx"/>
+                            <constraint firstItem="abO-Ah-PXP" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.3" id="EeC-tt-fee"/>
+                            <constraint firstItem="WYl-7B-Ngb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="28" id="Flp-zA-9YT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ewq-wp-ikg" secondAttribute="bottom" constant="20" id="Fua-86-vzS"/>
+                            <constraint firstItem="WYl-7B-Ngb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="GgH-Nj-WVD"/>
+                            <constraint firstItem="UXZ-Bm-81E" firstAttribute="width" secondItem="abO-Ah-PXP" secondAttribute="width" multiplier="1:1" id="Iza-Fo-E4Y"/>
+                            <constraint firstItem="cC7-co-YkL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PiS-TY-16i"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WYl-7B-Ngb" secondAttribute="trailing" constant="28" id="SB7-GB-yBF"/>
+                            <constraint firstItem="So9-Pp-qtS" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.1" id="bU9-aQ-UiE"/>
+                            <constraint firstItem="ewq-wp-ikg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="eIC-dk-hFw"/>
+                            <constraint firstItem="cC7-co-YkL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fUs-hv-A8h"/>
+                            <constraint firstItem="abO-Ah-PXP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="fgX-We-bfK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="abO-Ah-PXP" secondAttribute="trailing" constant="28" id="htf-P4-ZBY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ewq-wp-ikg" secondAttribute="trailing" constant="28" id="iZP-Ld-sWn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="cC7-co-YkL" secondAttribute="bottom" id="jpt-nl-dSv"/>
+                            <constraint firstItem="abO-Ah-PXP" firstAttribute="top" secondItem="WYl-7B-Ngb" secondAttribute="bottom" constant="16" id="vwu-Qd-Qkv"/>
+                            <constraint firstItem="UXZ-Bm-81E" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="w9F-nV-kg2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertBtn" destination="fyd-Ur-snD" id="GMk-p0-Ild"/>
+                        <outlet property="alertImg" destination="So9-Pp-qtS" id="DFO-LM-PeP"/>
+                        <outlet property="alertMessageLbl" destination="N8I-01-LrW" id="jE2-LV-oTn"/>
+                        <outlet property="alertView" destination="cC7-co-YkL" id="clY-bb-Bkn"/>
+                        <outlet property="contentView" destination="Nwg-kP-KXW" id="s98-cc-c1L"/>
+                        <outlet property="instructionLbl" destination="WYl-7B-Ngb" id="bUH-Iq-qzf"/>
+                        <outlet property="processBtn" destination="UXZ-Bm-81E" id="W45-MF-vLe"/>
+                        <outlet property="segmentedController" destination="ewq-wp-ikg" id="ym7-vP-YVx"/>
+                        <outlet property="userInputTxt" destination="abO-Ah-PXP" id="uuc-yU-Z0M"/>
+                        <segue destination="wsZ-6e-9sO" kind="show" identifier="showMessage" id="ff9-6e-Tk2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="117"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="j52-Sn-XE5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Message" id="wsZ-6e-9sO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Dw9-8z-3NV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xXg-sx-b0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="EncryptorBG">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="EncryptorGrey">
+            <color red="0.8784313725490196" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="EncryptorText">
+            <color red="0.39800000190734863" green="0.39599999785423279" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

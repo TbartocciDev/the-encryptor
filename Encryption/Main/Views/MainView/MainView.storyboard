@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="Encryption" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYZ-p1-upP" userLabel="About">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <connections>
+                                    <segue destination="JFZ-bh-ROp" kind="embed" id="gFc-ra-oVc"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6F-3e-hFJ" userLabel="HowToUse">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <connections>
+                                    <segue destination="Isk-Yq-YnS" kind="embed" id="GG8-pw-3q5"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-Fd-0op" userLabel="Encryptor">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <connections>
+                                    <segue destination="VDI-KA-EcF" kind="embed" id="tVb-4R-twu"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yYZ-p1-upP" secondAttribute="bottom" id="KDf-mY-h56"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="q6F-3e-hFJ" secondAttribute="bottom" id="M5U-Bg-9cd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="q6F-3e-hFJ" secondAttribute="trailing" id="Mvz-iJ-pa2"/>
+                            <constraint firstItem="yYZ-p1-upP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Obn-no-qIB"/>
+                            <constraint firstItem="yYZ-p1-upP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="R8s-DB-D3B"/>
+                            <constraint firstItem="hU9-Fd-0op" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="TFI-mX-Db2"/>
+                            <constraint firstItem="hU9-Fd-0op" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XZG-wz-yDc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hU9-Fd-0op" secondAttribute="trailing" id="aif-ag-Yo6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yYZ-p1-upP" secondAttribute="trailing" id="bsB-V4-5MY"/>
+                            <constraint firstItem="q6F-3e-hFJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="dYm-7o-Dwd"/>
+                            <constraint firstItem="q6F-3e-hFJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dey-6B-9id"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hU9-Fd-0op" secondAttribute="bottom" id="rj1-aj-B9R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutView" destination="yYZ-p1-upP" id="5Bm-NH-c1T"/>
+                        <outlet property="encryptorView" destination="hU9-Fd-0op" id="R82-XM-LLb"/>
+                        <outlet property="howToUseView" destination="q6F-3e-hFJ" id="rsf-ow-Caf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="4"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="g2a-gb-YCw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="About" id="JFZ-bh-ROp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCX-HS-b0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="27"/>
+        </scene>
+        <!--HowToUse-->
+        <scene sceneID="dJ3-Yj-ErK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HowToUse" id="Isk-Yq-YnS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhS-Na-cAa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="146"/>
+        </scene>
+        <!--Encryptor-->
+        <scene sceneID="dSm-wF-LPN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Encryptor" id="VDI-KA-EcF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEz-z5-mxS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5E3-ks-Ipt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Encryption" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ruc-Mq-HAy">
+                                <rect key="frame" x="20" y="477.33333333333326" width="353" height="340.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PageCell" rowHeight="100" id="JMV-UU-tca" customClass="PageListItemCell" customModule="Encryption" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="353" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JMV-UU-tca" id="fzq-t1-yPW">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c" translatesAutoresizingMaskIntoConstraints="NO" id="yVs-s5-0dn">
+                                                    <rect key="frame" x="8" y="21.333333333333332" width="57" height="57.333333333333343"/>
+                                                    <color key="tintColor" name="EncryptorGreen"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="yVs-s5-0dn" secondAttribute="height" multiplier="1:1" id="3qY-Tr-fIi"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encyptor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-OO-2KX">
+                                                    <rect key="frame" x="85" y="30" width="94" height="40"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="30"/>
+                                                    <color key="textColor" name="EncryptorText"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="EncryptorGrey"/>
+                                            <constraints>
+                                                <constraint firstItem="fLe-OO-2KX" firstAttribute="leading" secondItem="yVs-s5-0dn" secondAttribute="trailing" constant="20" id="F0v-Sd-Wr9"/>
+                                                <constraint firstItem="fLe-OO-2KX" firstAttribute="height" secondItem="fzq-t1-yPW" secondAttribute="height" multiplier="0.4" id="Iov-nW-NnE"/>
+                                                <constraint firstItem="yVs-s5-0dn" firstAttribute="height" secondItem="fzq-t1-yPW" secondAttribute="height" multiplier="0.570175" id="N7K-NC-473"/>
+                                                <constraint firstItem="fLe-OO-2KX" firstAttribute="centerY" secondItem="yVs-s5-0dn" secondAttribute="centerY" id="VCm-Ac-Jci"/>
+                                                <constraint firstItem="yVs-s5-0dn" firstAttribute="centerY" secondItem="fzq-t1-yPW" secondAttribute="centerY" id="mfx-x9-wer"/>
+                                                <constraint firstItem="yVs-s5-0dn" firstAttribute="leading" secondItem="fzq-t1-yPW" secondAttribute="leading" constant="8" id="ul6-Tq-Z3r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImg" destination="yVs-s5-0dn" id="dDO-AR-GQ0"/>
+                                            <outlet property="titleLbl" destination="fLe-OO-2KX" id="pzU-M2-h5B"/>
+                                            <segue destination="2I5-nq-oL9" kind="show" identifier="toMain" id="lta-qx-JB6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read and write secret messages to and from friends!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="L05-ex-oj5">
+                                <rect key="frame" x="28" y="397" width="337" height="60.333333333333314"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
+                                <color key="textColor" name="EncryptorText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to The Encryptor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="x7i-bT-jLS">
+                                <rect key="frame" x="28" y="353" width="337" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTB-GA-e0s">
+                                <rect key="frame" x="28" y="123" width="337" height="210"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="EncryptorBG"/>
+                        <constraints>
+                            <constraint firstItem="x7i-bT-jLS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="87D-h2-NrL"/>
+                            <constraint firstItem="L05-ex-oj5" firstAttribute="width" secondItem="x7i-bT-jLS" secondAttribute="width" id="BJq-4a-MmH"/>
+                            <constraint firstItem="kTB-GA-e0s" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="GTL-Lw-NFi"/>
+                            <constraint firstItem="L05-ex-oj5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Jjv-yT-dLp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ruc-Mq-HAy" secondAttribute="bottom" id="O7B-qf-89T"/>
+                            <constraint firstItem="kTB-GA-e0s" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="aqj-nu-XcJ"/>
+                            <constraint firstItem="ruc-Mq-HAy" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="-20" id="bHw-BJ-UX2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="x7i-bT-jLS" secondAttribute="trailing" constant="28" id="dST-df-anB"/>
+                            <constraint firstItem="L05-ex-oj5" firstAttribute="top" secondItem="x7i-bT-jLS" secondAttribute="bottom" id="drH-ZN-4Of"/>
+                            <constraint firstItem="ruc-Mq-HAy" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gbM-D2-gLK"/>
+                            <constraint firstItem="ruc-Mq-HAy" firstAttribute="top" secondItem="L05-ex-oj5" secondAttribute="bottom" constant="20" id="nm7-DD-zk3"/>
+                            <constraint firstItem="ruc-Mq-HAy" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="nza-HA-r2o"/>
+                            <constraint firstItem="kTB-GA-e0s" firstAttribute="width" secondItem="x7i-bT-jLS" secondAttribute="width" id="sag-7G-LJY"/>
+                            <constraint firstItem="x7i-bT-jLS" firstAttribute="top" secondItem="kTB-GA-e0s" secondAttribute="bottom" constant="20" id="ydE-SU-i52"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ble-HJ-8ls"/>
+                    <connections>
+                        <outlet property="headerLbl" destination="x7i-bT-jLS" id="Aze-B2-nxv"/>
+                        <outlet property="pagesTableView" destination="ruc-Mq-HAy" id="MdK-Q2-y0A"/>
+                        <outlet property="subHeaderLbl" destination="L05-ex-oj5" id="uZE-HY-RQI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+        </scene>
+        <!--MainView-->
+        <scene sceneID="4Mx-XO-puk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainView" id="2I5-nq-oL9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="47G-X8-vv8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uS6-gj-kg5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YbX-Jy-rOf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5E3-ks-Ipt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9BH-jv-cck">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="yF2-XF-wvb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UuB-0o-o37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="c" width="128" height="128"/>
+        <namedColor name="EncryptorBG">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="EncryptorGreen">
+            <color red="0.14000000059604645" green="0.72299998998641968" blue="0.10499999672174454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="EncryptorGrey">
+            <color red="0.8784313725490196" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="EncryptorText">
+            <color red="0.39800000190734863" green="0.39599999785423279" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
