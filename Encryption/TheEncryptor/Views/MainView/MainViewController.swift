@@ -19,7 +19,9 @@ class MainViewController: UIViewController {
         showSelectedView()
         self.title = selectedView
         
+        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.styleNavBar(title: selectedView, imgName: "line.3.horizontal", color: .black)
@@ -28,17 +30,21 @@ class MainViewController: UIViewController {
     
     func showSelectedView() {
         if selectedView == "Encryptor" {
-            encryptorView.isHidden = false
-            howToUseView.isHidden = true
-            aboutView.isHidden = true
+            presentScreen(screen: encryptorView)
         } else if selectedView == "How To Use" {
-            encryptorView.isHidden = true
-            howToUseView.isHidden = false
-            aboutView.isHidden = true
+            presentScreen(screen: howToUseView)
         } else if selectedView == "About" {
-            encryptorView.isHidden = true
-            howToUseView.isHidden = true
-            aboutView.isHidden = false
+            presentScreen(screen: aboutView)
+        }
+    }
+    
+    func presentScreen(screen: UIView) {
+        let screens = [encryptorView, howToUseView, aboutView]
+        for eachScreen in screens {
+            eachScreen?.isHidden = true
+            if eachScreen == screen {
+                screen.isHidden = false
+            }
         }
     }
 }

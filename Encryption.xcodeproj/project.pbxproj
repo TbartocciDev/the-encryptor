@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B445D587272DE99500BBA0CF /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B445D586272DE99500BBA0CF /* UIButton.swift */; };
+		B47031CD2A93A9A000A018E4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47031CC2A93A9A000A018E4 /* Colors.xcassets */; };
+		B47031CF2A93A9C900A018E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47031CE2A93A9C900A018E4 /* Images.xcassets */; };
 		B47EA6832707926F00718467 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6822707926F00718467 /* AppDelegate.swift */; };
 		B47EA6852707926F00718467 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6842707926F00718467 /* SceneDelegate.swift */; };
 		B47EA68D2707926F00718467 /* Encryption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B47EA68B2707926F00718467 /* Encryption.xcdatamodeld */; };
-		B47EA68F2707927500718467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47EA68E2707927500718467 /* Assets.xcassets */; };
 		B47EA6922707927500718467 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47EA6902707927500718467 /* LaunchScreen.storyboard */; };
 		B47EA69D2707927500718467 /* EncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA69C2707927500718467 /* EncryptionTests.swift */; };
 		B47EA6A82707927500718467 /* EncryptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47EA6A72707927500718467 /* EncryptionUITests.swift */; };
@@ -56,11 +57,12 @@
 
 /* Begin PBXFileReference section */
 		B445D586272DE99500BBA0CF /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		B47031CC2A93A9A000A018E4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		B47031CE2A93A9C900A018E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B47EA67F2707926F00718467 /* Encryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Encryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47EA6822707926F00718467 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47EA6842707926F00718467 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B47EA68C2707926F00718467 /* Encryption.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Encryption.xcdatamodel; sourceTree = "<group>"; };
-		B47EA68E2707927500718467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47EA6912707927500718467 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B47EA6932707927500718467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B47EA6982707927500718467 /* EncryptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EncryptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B47031CB2A93A98300A018E4 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				B47031CC2A93A9A000A018E4 /* Colors.xcassets */,
+				B47031CE2A93A9C900A018E4 /* Images.xcassets */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		B47EA6762707926F00718467 = {
 			isa = PBXGroup;
 			children = (
@@ -151,10 +162,9 @@
 		B47EA6812707926F00718467 /* Encryption */ = {
 			isa = PBXGroup;
 			children = (
-				B494C9092A4B3FF100071612 /* Main */,
+				B494C9092A4B3FF100071612 /* TheEncryptor */,
 				B47EA6822707926F00718467 /* AppDelegate.swift */,
 				B47EA6842707926F00718467 /* SceneDelegate.swift */,
-				B47EA68E2707927500718467 /* Assets.xcassets */,
 				B47EA6902707927500718467 /* LaunchScreen.storyboard */,
 				B47EA6932707927500718467 /* Info.plist */,
 				B47EA68B2707926F00718467 /* Encryption.xcdatamodeld */,
@@ -180,14 +190,15 @@
 			path = EncryptionUITests;
 			sourceTree = "<group>";
 		};
-		B494C9092A4B3FF100071612 /* Main */ = {
+		B494C9092A4B3FF100071612 /* TheEncryptor */ = {
 			isa = PBXGroup;
 			children = (
+				B47031CB2A93A98300A018E4 /* Styles */,
 				B445D585272DE97B00BBA0CF /* Extensions */,
 				B494C9172A4B5F4F00071612 /* Views */,
 				B494C90D2A4B475200071612 /* CustomModels */,
 			);
-			path = Main;
+			path = TheEncryptor;
 			sourceTree = "<group>";
 		};
 		B494C90A2A4B402900071612 /* Home */ = {
@@ -372,11 +383,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47031CD2A93A9A000A018E4 /* Colors.xcassets in Resources */,
+				B47031CF2A93A9C900A018E4 /* Images.xcassets in Resources */,
 				B494C9082A4B3FED00071612 /* Home.storyboard in Resources */,
 				B494C9312A4BE24E00071612 /* Message.storyboard in Resources */,
 				B494C9252A4B8E8C00071612 /* MainView.storyboard in Resources */,
 				B47EA6922707927500718467 /* LaunchScreen.storyboard in Resources */,
-				B47EA68F2707927500718467 /* Assets.xcassets in Resources */,
 				B494C9162A4B53A800071612 /* About.storyboard in Resources */,
 				B494C9202A4B5FF900071612 /* HowToUse.storyboard in Resources */,
 				B494C9292A4B959200071612 /* Encryptor.storyboard in Resources */,

@@ -19,8 +19,7 @@ class AboutPageViewController: UIViewController {
     
     
     @IBAction func visitWebsiteTapped(_ sender: Any) {
-        // change to my site once site is deployed
-        if let url = URL(string: "https://www.google.com/") {
+        if let url = URL(string: "https://koi-synthesizer-pa97.squarespace.com/encryptor/support") {
             UIApplication.shared.open(url)
         } else {
             print("invalid url")
